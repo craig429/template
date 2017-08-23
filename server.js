@@ -17,6 +17,7 @@ app.get('/', function(req, res) {
 		    ];
 		    var tagline = "Blah blah blah";
 
+
     res.render('pages/index', {
         drinks: drinks,
         tagline: tagline
