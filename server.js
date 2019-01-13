@@ -32,5 +32,5 @@ app.get('/about', function(req, res) {
 });
 
 // app.listen(3000); Heroku won't do this
-app.listen(80);
+app.listen(8080);
 console.log('80 is the magic port');
