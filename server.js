@@ -2,6 +2,7 @@
 // load the things we need
 var express = require('express');
 var app = express();
+const PORT = process.env.PORT || 5000;
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
@@ -32,5 +33,6 @@ app.get('/about', function(req, res) {
 });
 
 // app.listen(3000); Heroku won't do this
-app.listen(8080);
-console.log('80 is the magic port');
+// app.listen(8080);
+// console.log('80 is the magic port');
+app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
