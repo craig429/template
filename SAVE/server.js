@@ -10,7 +10,6 @@ app.set('view engine', 'ejs');
 // use res.render to load up an ejs view file
 
 // index page
-/*
 app.get('/', function(req, res) {
   var drinks = [
     { name: 'Bloody Mary', drunkness: 3 },
@@ -27,15 +26,13 @@ app.get('/', function(req, res) {
     tagline: tagline
   });
 });
-*/
 
-app.get('/', function(req, res) {
-    res.render('pages/AV');
 // about page
 app.get('/about', function(req, res) {
     res.render('pages/about');
 });
 
 // app.listen(3000); Heroku won't do this
-// console.log('3000 is the magic port');
+// app.listen(8080);
+// console.log('80 is the magic port');
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
